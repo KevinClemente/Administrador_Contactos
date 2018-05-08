@@ -18,6 +18,14 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/profile"/>
+
+        <ImageButton
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_call_black_24dp"
+            android:id="@+id/botom_llamar" />
     </LinearLayout>
 
 
@@ -52,6 +60,14 @@
             android:id="@+id/tvEmailV"
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
     </LinearLayout>
 

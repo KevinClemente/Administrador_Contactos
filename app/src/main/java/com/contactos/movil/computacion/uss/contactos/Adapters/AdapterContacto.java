@@ -2,10 +2,13 @@ package com.contactos.movil.computacion.uss.contactos.Adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.contactos.movil.computacion.uss.contactos.Modelo.Contacto;
@@ -53,10 +56,19 @@ public class AdapterContacto extends BaseAdapter {
         Contacto movimiento = list.get(position);
         TextView tvNombreV = (TextView) v.findViewById(R.id.tvNombreV);
         tvNombreV.setText(movimiento.getNombre());
-        TextView tvNumeroV = (TextView) v.findViewById(R.id.tvNumeroV);
+        final TextView tvNumeroV = (TextView) v.findViewById(R.id.tvNumeroV);
         tvNumeroV.setText(movimiento.getTelefono());
         TextView tvEmailV = (TextView) v.findViewById(R.id.tvEmailV);
         tvEmailV.setText(movimiento.getEmail());
+        ImageButton BotonLlamar= (ImageButton) v.findViewById(R.id.botom_llamar);
+        BotonLlamar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent llamar = new Intent(Intent.ACTION_CALL);
+                llamar.setData(Uri.parse("tel:"+tvNumeroV.getText().toString()));
+                view.getContext().startActivity(llamar);
+            }
+        });
         return v;
     }
 }
