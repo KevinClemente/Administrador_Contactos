@@ -16,9 +16,7 @@ import com.contactos.movil.computacion.uss.contactos.R;
 
 import java.util.List;
 
-/**
- * Created by guima on 27/11/2015.
- */
+
 public class AdapterContacto extends BaseAdapter {
 
     private List<Contacto> list;
@@ -60,6 +58,8 @@ public class AdapterContacto extends BaseAdapter {
         tvNumeroV.setText(movimiento.getTelefono());
         TextView tvEmailV = (TextView) v.findViewById(R.id.tvEmailV);
         tvEmailV.setText(movimiento.getEmail());
+
+
         ImageButton BotonLlamar= (ImageButton) v.findViewById(R.id.botom_llamar);
         BotonLlamar.setOnClickListener(new View.OnClickListener() {
             @Override

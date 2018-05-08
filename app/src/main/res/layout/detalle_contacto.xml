@@ -10,24 +10,23 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        >
+        android:layout_height="100dp">
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/profile"
-            />
+            android:background="@drawable/profile"/>
 
-        <ImageButton
-            android:layout_marginLeft="15dp"
-            android:layout_gravity="center"
+            <ImageButton
+
+            android:id="@+id/botom_llamar"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
             android:src="@drawable/ic_call_black_24dp"
-            android:id="@+id/botom_llamar" />
+            android:layout_marginLeft="14dp"/>
     </LinearLayout>
 
 
@@ -61,18 +60,11 @@
             android:text=""
             android:id="@+id/tvEmailV"
             android:textStyle="bold"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            />
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-
-    </LinearLayout>
 
 
 </LinearLayout>
