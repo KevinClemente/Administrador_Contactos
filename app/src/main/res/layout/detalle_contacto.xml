@@ -62,7 +62,7 @@
             android:id="@+id/tvEmailV"
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor=""/>
+            />
 
 
     </LinearLayout>
