@@ -26,7 +26,7 @@ public class AdapterContacto extends BaseAdapter {
     public AdapterContacto(Activity activity, List<Contacto> list) {
         this.activity = activity;
         this.list = list;
-    }
+    } /* .*/
 
     @Override
     public int getCount() {
